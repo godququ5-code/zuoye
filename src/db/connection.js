@@ -1,5 +1,5 @@
 const monk = require('monk');
-
+//#注释：这是数据库的连接地址
 const dbUrl = process.env.DB_URL;
 
 // console.log(process.env.NODE_ENV);
@@ -11,3 +11,4 @@ db.then(() => {
 });
 
 module.exports = db;
+console.log('数据库连接初始化...');
